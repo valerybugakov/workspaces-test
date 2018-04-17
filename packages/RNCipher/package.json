@@ -7,7 +7,7 @@
     "postinstall": "react-native link"
   },
   "dependencies": {
-    "cipher-core": "^1.0.8",
+    "cipher-core": "github:valerybugakov/workspaces-test#cipher-core@1.0.8",
     "components": "^1.0.3",
     "core-js": "^2.5.5",
     "react": "16.2.0",

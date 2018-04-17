@@ -2,23 +2,6 @@
   "name": "ra-init",
   "version": "1.0.0",
   "description": "create react-native with init",
-  "private": true,
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ],
-    "nohoist": [
-      "**/react-native",
-      "**/react-native/**",
-      "react-cipher/react-scripts",
-      "**/cipher-core",
-      "**/components",
-      "RNCipher/react-native-*",
-      "RNCipher/react-native-*/**",
-      "RNCipher/vm-browserify",
-      "RNCipher/vm-browserify/**"
-    ]
-  },
   "scripts": {
     "reset-modules": "rm -rf node_modules/ yarn.lock packages/*/node_modules",
     "reset-yarn": "yarn cache clean",
@@ -27,6 +10,6 @@
     "reset": "yarn reset-modules && yarn reset-cache"
   },
   "devDependencies": {
-    "lerna": "^2.10.2"
+    "lerna": "^3.0.0-beta.17"
   }
 }

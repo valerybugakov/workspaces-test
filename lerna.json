@@ -1,6 +1,12 @@
 {
-  "lerna": "2.10.2",
-  "useWorkspaces": true,
+  "packages": [
+    "packages/*"
+  ],
   "version": "independent",
-  "npmClient": "yarn"
+  "npmClient": "yarn",
+  "useGitVersion": true,
+  "gitVersionPrefix": "v",
+  "packages": [
+    "packages/*"
+  ]
 }
