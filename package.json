@@ -4,7 +4,9 @@
   "description": "create react-native with init",
   "private": true,
   "workspaces": {
-    "packages": ["packages/*"],
+    "packages": [
+      "packages/*"
+    ],
     "nohoist": [
       "**/react-native",
       "**/react-native/**",
@@ -23,5 +25,8 @@
     "reset-rn": "watchman watch-del-all; rm -fr $TMPDIR/react-*; rm -rf $TMPDIR/haste-map-react-native-packager-*",
     "reset-cache": "yarn reset-yarn && yarn reset-rn",
     "reset": "yarn reset-modules && yarn reset-cache"
+  },
+  "devDependencies": {
+    "lerna": "^2.10.2"
   }
 }
