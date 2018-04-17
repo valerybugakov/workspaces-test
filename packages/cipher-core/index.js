@@ -27,4 +27,4 @@ export function decrypt(encrypted) {
   return dec;
 }
 
-export const IMPORTANTE = 'core@1.0.3';
+export const IMPORTANTE = 'core@1.0.4';
