@@ -1,13 +1,14 @@
 {
-  "name": "@valerybugakov/cipher-core",
-  "version": "1.0.2",
+  "name": "cipher-core",
+  "version": "1.0.3",
   "main": "index.js",
-  "dependencies": {},
   "scripts": {
     "test": "jest"
   },
   "jest": {
-    "moduleFileExtensions": ["js"],
+    "moduleFileExtensions": [
+      "js"
+    ],
     "testRegex": "(\\.(test|spec))\\.(js)$",
     "testPathIgnorePatterns": [
       "\\.snap$",
