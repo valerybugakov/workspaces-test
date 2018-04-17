@@ -1,8 +1,7 @@
 {
-  "name": "cipher-core",
-  "version": "1.0.1",
+  "name": "@valerybugakov/cipher-core",
+  "version": "1.0.2",
   "main": "index.js",
-  "private": true,
   "dependencies": {},
   "scripts": {
     "test": "jest"

@@ -1,12 +1,9 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+// @flow
 
 import React, { Component } from "react";
 import { Alert, Platform, StyleSheet, Text, View, Button, TextInput } from "react-native";
-import { encrypt, decrypt, IMPORTANTE } from "cipher-core";
+import { encrypt, decrypt, IMPORTANTE } from "@valerybugakov/cipher-core";
+import NativeWeb from 'components';
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -18,10 +15,13 @@ export default class App extends Component {
     super(props);
     this.state = { input: undefined, encrypted: undefined, decrypted: undefined };
   }
+
   render() {
     return (
       <View style={styles.root}>
         <View style={styles.container}>
+          <Text style={styles.instructions}>{IMPORTANTE}</Text>
+          <NativeWeb />
           <Text style={styles.welcome}>Demo: Simple Cipher</Text>
           <TextInput
             style={styles.inputField}
@@ -39,11 +39,11 @@ export default class App extends Component {
         <View style={styles.container}>
           <Text style={styles.instructions}>To get started, edit App.js</Text>
           <Text style={styles.instructions}>{instructions}</Text>
-          <Text style={styles.instructions}>{IMPORTANTE}</Text>
         </View>
       </View>
     );
   }
+
   _showDecryptView = () => {
     if (!this.state.encrypted) return null;
     console.log(`this.state.encrypted=`, this.state.encrypted);
@@ -58,13 +58,16 @@ export default class App extends Component {
       </View>
     );
   };
+
   _showDecryptResult = () => {
     if (!this.state.decrypted) return null;
     return <Text>Decrypted: {this.state.decrypted}</Text>;
   };
+
   _textChanged = t => {
     this.setState({ input: t, encrypted: undefined, decrypted: undefined });
   };
+
   _encrypt = () => {
     if (!this.state.input) {
       Alert.alert("No Text", "please enter text to encrypt");
@@ -73,6 +76,7 @@ export default class App extends Component {
     const encrypted = encrypt(this.state.input);
     this.setState({ encrypted });
   };
+
   _decrypt = () => {
     if (!this.state.encrypted) {
       Alert.alert("No Encrypted Text", "please encrypt some text first");
@@ -81,6 +85,7 @@ export default class App extends Component {
     const decrypted = decrypt(this.state.encrypted);
     this.setState({ decrypted });
   };
+
   _reset = () => {
     this.setState({ input: undefined, encrypted: undefined, decrypted: undefined });
   };

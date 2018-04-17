@@ -1,0 +1,18 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "transpile": "babel -w ./index.js -d ./lib"
+  },
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-native-web": "^0.6.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-react-native-web": "^0.6.0",
+    "babel-preset-react": "^6.24.1"
+  }
+}

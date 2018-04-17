@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 // import logo from "./logo.svg";
 import "./App.css";
-import { encrypt, decrypt } from "cipher-core";
+import { encrypt, decrypt, IMPORTANTE } from "@valerybugakov/cipher-core";
+
+import NativeWeb from 'components/lib/index.js';
 
 class App extends Component {
   constructor(props) {
@@ -16,6 +18,8 @@ class App extends Component {
     return (
       <div className="root">
         <div className="container">
+          <p>{IMPORTANTE}</p>
+          <NativeWeb />
           <p className="welcome">Demo: Simple Cipher</p>
           <textarea
             type="text"
@@ -32,16 +36,6 @@ class App extends Component {
         </div>
       </div>
     );
-    // return (
-    //   <div className="App">
-    //     <header className="App-header">
-    //       <img src={logo} className="App-logo" alt="logo" />
-    //       <h1 className="App-title">Welcome to React</h1>
-    //     </header>
-    //     <p className="App-intro">
-    //       To get started, edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //   </div>
   }
 
   _showDecryptView = () => {

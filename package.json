@@ -10,6 +10,7 @@
       "**/react-native/**",
       "react-cipher/react-scripts",
       "**/cipher-core",
+      "**/components",
       "RNCipher/react-native-*",
       "RNCipher/react-native-*/**",
       "RNCipher/vm-browserify",

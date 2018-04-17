@@ -8,7 +8,9 @@
     "postinstall": "react-native link"
   },
   "dependencies": {
-    "cipher-core": "1.0.0",
+    "@valerybugakov/cipher-core": "1.0.0",
+    "components": "1.0.0",
+    "core-js": "^2.5.5",
     "react": "16.2.0",
     "react-native": "0.52.2",
     "react-native-crypto": "^2.1.2",
@@ -20,7 +22,8 @@
     "babel-jest": "22.1.0",
     "babel-preset-react-native": "4.0.0",
     "jest": "22.1.4",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "resize-observer-polyfill": "^1.5.0"
   },
   "jest": {
     "preset": "react-native"
