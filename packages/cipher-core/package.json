@@ -1,6 +1,7 @@
 {
   "name": "cipher-core",
-  "version": "1.0.7",
+  "version": "1.0.8",
+  "private": true,
   "main": "index.js",
   "scripts": {
     "test": "jest"
