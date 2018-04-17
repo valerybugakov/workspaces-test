@@ -6,6 +6,9 @@
     "test": "jest",
     "postinstall": "react-native link"
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "dependencies": {
     "cipher-core": "github:valerybugakov/workspaces-test#cipher-core@1.0.8",
     "components": "^1.0.3",
