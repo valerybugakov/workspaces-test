@@ -1,6 +1,6 @@
 {
   "name": "RNCipher",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
@@ -8,7 +8,7 @@
     "postinstall": "react-native link"
   },
   "dependencies": {
-    "cipher-core": "^1.0.3",
+    "cipher-core": "^1.0.5",
     "components": "^1.0.1",
     "core-js": "^2.5.5",
     "react": "16.2.0",
