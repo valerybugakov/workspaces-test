@@ -1,10 +1,10 @@
 {
   "name": "react-cipher",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "dependencies": {
-    "cipher-core": "^1.0.6",
-    "components": "^1.0.1",
+    "cipher-core": "^1.0.7",
+    "components": "^1.0.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.0"
