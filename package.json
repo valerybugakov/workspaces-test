@@ -8,6 +8,8 @@
     "nohoist": [
       "**/react-native",
       "**/react-native/**",
+      "**/react",
+      "**/react/**",
       "react-cipher/react-scripts",
       "**/cipher-core",
       "**/components",

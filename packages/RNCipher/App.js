@@ -4,6 +4,8 @@ import React, { Component } from "react";
 import { Alert, Platform, StyleSheet, Text, View, Button, TextInput } from "react-native";
 import { encrypt, decrypt, IMPORTANTE } from "@valerybugakov/cipher-core";
 import NativeWeb from 'components';
+import { TextLink } from "@times-components/link";
+import Caption from "@times-components/caption";
 
 const instructions = Platform.select({
   ios: "Press Cmd+R to reload,\n" + "Cmd+D or shake for dev menu",
@@ -33,6 +35,12 @@ export default class App extends Component {
             value={this.state.input || ""}
             onChangeText={this._textChanged}
           />
+          <TextLink url="https://thetimes.co.uk/">
+            The Times
+          </TextLink>
+          <Caption>
+            <Text>The Times</Text>
+          </Caption>
           <Button title="encrypt" onPress={this._encrypt} />
           {this._showDecryptView()}
         </View>

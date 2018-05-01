@@ -2,6 +2,8 @@ import React, { Component } from "react";
 // import logo from "./logo.svg";
 import "./App.css";
 import { encrypt, decrypt, IMPORTANTE } from "@valerybugakov/cipher-core";
+import { TextLink } from "@times-components/link";
+import Caption from "@times-components/caption";
 
 import NativeWeb from 'components/lib/index.js';
 
@@ -29,6 +31,12 @@ class App extends Component {
             value={this.state.input || ""}
             onChange={this._textChanged}
           />
+          <TextLink url="https://thetimes.co.uk/">
+            The Times
+          </TextLink>
+          <Caption>
+            <p>The Times</p>
+          </Caption>
           <button className="button" onClick={this._encrypt}>
             encrypt
           </button>
